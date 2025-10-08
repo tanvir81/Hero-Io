@@ -23,6 +23,11 @@ const AllApps = () => {
 
   return (
     <div className="px-4 py-6 max-w-7xl mx-auto">
+      {loading && (
+        <div className="flex justify-center my-6">
+          <span className="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+      )}
       {/* Title Section */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold">Explore All Apps</h1>
@@ -52,12 +57,10 @@ const AllApps = () => {
         </div>
       )}
 
-      {/* 🧠 No Match Message */}
       {!loading && !searching && filteredApps.length === 0 && (
         <p className="text-center text-gray-500">No App Found</p>
       )}
 
-      {/* 📦 App Grid */}
       {!loading && !error && filteredApps.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {filteredApps.map((app) => (
@@ -66,8 +69,6 @@ const AllApps = () => {
         </div>
       )}
 
-      {/* Loading & Error States */}
-      {loading && <p className="text-center">Loading apps...</p>}
       {error && <p className="text-center text-red-500">Error loading apps</p>}
     </div>
   );

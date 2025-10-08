@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
 import useApps from "../hooks/useApps";
 import {
   BarChart,
@@ -10,7 +9,9 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { toast } from "react-toastify";
+
 import { useParams } from "react-router";
+import { loadInstalledApps, saveInstalledApp } from "../utility/localStorage";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -18,10 +19,25 @@ const AppDetails = () => {
   const [installed, setInstalled] = useState(false);
 
   const app = apps.find((app) => app.id === parseInt(id));
+  console.log("installing app", app);
+
+  useEffect(() => {
+    if (app) {
+      const isAlreadyInstalled = loadInstalledApps().some(
+        (p) => p.id === app.id
+      );
+      setInstalled(isAlreadyInstalled);
+    }
+  }, [app]);
 
   const handleInstall = () => {
-    setInstalled(true);
-    toast.success(`${app.title} installed successfully!`);
+    const success = saveInstalledApp(app);
+    if (success) {
+      setInstalled(true);
+      toast.success(`${app.title} installed successfully!`);
+    } else {
+      toast.info("App is already installed.");
+    }
   };
 
   if (loading) return <p className="text-center">Loading app details...</p>;

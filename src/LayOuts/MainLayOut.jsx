@@ -23,6 +23,9 @@ const MainLayOut = () => {
         <Outlet />
       </div>
       <Footer />
+
+      {/* ✅ Toast container must be rendered */}
+      <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );
 };

@@ -11,7 +11,7 @@ const Banner = () => {
       </p>
       <button>Google Play</button>
       <button>Apple Store</button>
-      <img src="" alt="" />
+      {/* <img src="" alt="" /> */}
     </>
   );
 };

@@ -12,6 +12,9 @@ import { toast } from "react-toastify";
 
 import { useParams } from "react-router";
 import { loadInstalledApps, saveInstalledApp } from "../utility/localStorage";
+import downloadIcon from "../assets/icon-downloads.png";
+import { formatNumber } from "../utility/format";
+import reviewIcon from "../assets/icon-review.png";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -34,7 +37,7 @@ const AppDetails = () => {
     const success = saveInstalledApp(app);
     if (success) {
       setInstalled(true);
-      toast.success(`${app.title} installed successfully!`);
+      toast.success(`Yahoo ⚡!!${app.title} installed successfully!`);
     } else {
       toast.info("App is already installed.");
     }
@@ -58,11 +61,14 @@ const AppDetails = () => {
           <h1 className="text-3xl font-bold mb-2">{app.title}</h1>
           <p className="text-gray-600 mb-1">Company: {app.companyName}</p>
           <p className="text-sm text-gray-700">Rating: ⭐ {app.ratingAvg}</p>
-          <p className="text-sm text-gray-700">
-            Downloads: {app.downloads.toLocaleString()}
+          <p className="text-sm text-gray-700 flex items-center gap-1">
+            <img src={downloadIcon} alt="Downloads" className="w-4 h-4" />
+            {formatNumber(app.downloads)} Downloads
           </p>
-          <p className="text-sm text-gray-700">
-            Reviews: {app.reviews.toLocaleString()}
+
+          <p className="text-sm text-gray-700 flex items-center gap-1">
+            <img src={reviewIcon} alt="Reviews" className="w-4 h-4" />
+            {formatNumber(app.reviews)} Reviews
           </p>
 
           <button

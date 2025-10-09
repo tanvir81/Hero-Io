@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { toast } from "react-toastify";
 import { loadInstalledApps, removeInstalledApp } from "../utility/localStorage";
+import downloadIcon from "../assets/icon-downloads.png";
+import { formatNumber } from "../utility/format";
 
 const InstalledApps = () => {
   const [installed, setInstalled] = useState(() => loadInstalledApps());
@@ -19,12 +21,11 @@ const InstalledApps = () => {
     }
   })();
 
-  const handleUninstall = (id) => {
-    removeInstalledApp(id);
-    setInstalled((prev) => prev.filter((p) => p.id !== id));
-    toast.warn("App uninstalled.");
+  const handleUninstall = (app) => {
+    removeInstalledApp(app.id);
+    setInstalled((prev) => prev.filter((p) => p.id !== app.id));
+    toast(`🗑️ ${app.title} uninstalled from your Device.`);
   };
-
   return (
     <div className="space-y-6">
       <div className="flex justify-between py-5 items-center">
@@ -41,7 +42,7 @@ const InstalledApps = () => {
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-            <option value="none">Sort by downloads</option>
+            <option value="none">Sort by Size</option>
             <option value="downloads-asc">Low → High</option>
             <option value="downloads-desc">High → Low</option>
           </select>
@@ -64,13 +65,14 @@ const InstalledApps = () => {
             <div className="card-body">
               <h3 className="card-title">{app.name}</h3>
               <p className="text-base-content/70">{app.category}</p>
-              <p className="text-sm text-gray-500">
-                Downloads: {app.downloads}
+              <p className="text-sm text-gray-700 flex items-center gap-1">
+                <img src={downloadIcon} alt="Downloads" className="w-4 h-4" />
+                {formatNumber(app.downloads)} Downloads
               </p>
             </div>
             <div className="pr-4 flex items-center gap-3">
               <button
-                onClick={() => handleUninstall(app.id)}
+                onClick={() => handleUninstall(app)}
                 className="btn btn-outline"
               >
                 Uninstall

@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://picsum.photos/200?random=1",
+    "image": "https://i.ibb.co.com/TBz5FH7P/logo-design.png",
     "title": "NoteMaster",
     "companyName": "SoftEdge Inc.",
     "id": 1,
@@ -62,7 +62,7 @@
     "size": 60,
     "reviews": 3230,
     "ratingAvg": 4.8,
-    "downloads": 480000,
+    "downloads": 4480000,
     "ratings": [
       { "name": "1 star", "count": 60 },
       { "name": "2 star", "count": 90 },
@@ -80,7 +80,7 @@
     "size": 75,
     "reviews": 5870,
     "ratingAvg": 4.5,
-    "downloads": 720000,
+    "downloads": 1720000,
     "ratings": [
       { "name": "1 star", "count": 180 },
       { "name": "2 star", "count": 230 },
@@ -98,7 +98,7 @@
     "size": 38,
     "reviews": 910,
     "ratingAvg": 4.7,
-    "downloads": 54000,
+    "downloads": 154000,
     "ratings": [
       { "name": "1 star", "count": 20 },
       { "name": "2 star", "count": 35 },

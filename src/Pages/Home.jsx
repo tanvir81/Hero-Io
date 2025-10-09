@@ -22,17 +22,20 @@ const Home = () => {
 
       {error && <p className="text-center text-red-500">Error loading apps</p>}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+      <div className="max-w-[1600px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
         {apps.slice(0, 8).map((app) => (
           <AppCard key={app.id} app={app} />
         ))}
       </div>
-      <Link
-        to="/allapps"
-        className="block text-center mt-6 text-blue-600 hover:underline font-medium"
-      >
-        Show All
-      </Link>
+      <div className="flex justify-center my-8">
+        <Link
+          to="/allapps"
+          data-discover="true"
+          className="px-8 py-2 rounded-md text-white  bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:opacity-90 transition text-center"
+        >
+          Show All
+        </Link>
+      </div>
     </div>
   );
 };

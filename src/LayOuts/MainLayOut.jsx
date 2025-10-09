@@ -11,20 +11,16 @@ const MainLayOut = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* 🔄 DaisyUI Loader During Navigation */}
       {isLoading && (
         <div className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-sm py-4 text-center">
           <span className="loading loading-spinner loading-lg text-primary"></span>
         </div>
       )}
-
       <Navbar />
       <div className="flex-1">
         <Outlet />
       </div>
       <Footer />
-
-      {/* ✅ Toast container must be rendered */}
       <ToastContainer position="top-center" autoClose={3000} />
     </div>
   );

@@ -7,17 +7,16 @@ import ratingIcon from "../assets/icon-ratings.png";
 const AppCard = ({ app }) => {
   return (
     <Link to={`/apps/${app.id}`} className="block">
-      <div className="border rounded-lg p-4 shadow hover:shadow-lg transition">
+      <div className=" rounded-lg p-4 shadow-xl hover:shadow-1xl transition transform hover:-translate-y-[6px]">
         <img
           src={app.image}
           alt={app.title}
-          className="w-full h-00 object-contain
-           rounded"
+          className="w-full h-60 object-contain rounded"
         />
         <div className="p-2">
           <div className="flex items-center justify-items-start mt-8">
-            <h3 className="text-lg font-semibold ">{app.title}: </h3>
-            <h3 className="text-lg font-semibold "> {app.companyName}</h3>
+            <h3 className="text-lg font-semibold">{app.title}</h3>
+            {/* <h3 className="text-lg font-semibold">{app.companyName}</h3> */}
           </div>
 
           <div className="flex justify-between mt-8">
@@ -26,8 +25,8 @@ const AppCard = ({ app }) => {
               {formatNumber(app.downloads)}
             </p>
 
-            <p className="text-lg flex  rounded-[4px] bg-[#FFF0E1] items-center px-3 py-1 gap-3 text-[#FF8811]">
-              <img src={ratingIcon} alt="Rating" className="w-5 h-5" />
+            <p className="text-sm flex rounded-[4px] bg-[#FFF0E1] items-center px-3 py-1 gap-3 text-[#FF8811]">
+              <img src={ratingIcon} alt="Rating" className="w-4 h-4" />
               {app.ratingAvg}
             </p>
           </div>

@@ -42,7 +42,7 @@ const InstalledApps = () => {
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}
           >
-            <option value="none">Sort by Size</option>
+            <option value="none">Sort by Downloads</option>
             <option value="downloads-asc">Low → High</option>
             <option value="downloads-desc">High → Low</option>
           </select>

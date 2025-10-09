@@ -1,4 +1,3 @@
-// src/hooks/useApps.js
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -8,7 +7,7 @@ const useApps = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios("/appData.json") // ✅ Correct path for public folder
+    axios("/appData.json")
       .then((res) => setApps(res.data))
       .catch((err) => setError(err))
       .finally(() => setLoading(false));

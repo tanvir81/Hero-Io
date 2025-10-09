@@ -50,7 +50,6 @@ const AppDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
-      {/* App Info */}
       <div className="flex flex-col md:flex-row gap-8 items-start mb-10">
         <img
           src={app.image}
@@ -85,7 +84,6 @@ const AppDetails = () => {
         </div>
       </div>
 
-      {/* Chart */}
       <div className="mb-10">
         <h2 className="text-xl font-semibold mb-4">App Review Breakdown</h2>
         <ResponsiveContainer width="100%" height={300}>

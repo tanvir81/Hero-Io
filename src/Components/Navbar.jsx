@@ -29,15 +29,11 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/allapps">Apps</NavLink>
-            </li>
-            <li>
-              <NavLink to="/installedApps">Installation</NavLink>
-            </li>
+            <NavLink to="/">Home</NavLink>
+
+            <NavLink to="/allapps">Apps</NavLink>
+
+            <NavLink to="/installedApps">Installation</NavLink>
 
             <NavLink
               to="https://github.com/tanvir81"
@@ -48,7 +44,7 @@ const Navbar = () => {
               <img
                 src={githubIcon}
                 alt="GitHub"
-                className="w-5 h-5 object-contain"
+                className="w-5 h-5 object-contain "
               />
               Contribute
             </NavLink>

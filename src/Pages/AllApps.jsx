@@ -28,7 +28,7 @@ const AllApps = () => {
           <span className="loading loading-spinner loading-lg text-primary"></span>
         </div>
       )}
-      {/* Title Section */}
+
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold">Explore All Apps</h1>
         <p className="text-gray-600 mt-2">
@@ -36,7 +36,6 @@ const AllApps = () => {
         </p>
       </div>
 
-      {/* Search and States */}
       <div className="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
         <p className="text-sm text-gray-700">
           Total Apps: <span className="font-semibold">{apps.length}</span>
@@ -50,7 +49,6 @@ const AllApps = () => {
         />
       </div>
 
-      {/* 🔄 Loader During Search */}
       {searching && (
         <div className="flex justify-center my-4">
           <span className="loading loading-spinner loading-md text-primary"></span>

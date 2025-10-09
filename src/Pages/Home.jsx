@@ -15,8 +15,10 @@ const Home = () => {
         </div>
       )}
       <Banner />
-      <h1 className="text-2xl font-bold text-center my-6">Trending Apps</h1>
-      <p>Explore All Trending Apps on the Market developed by us</p>
+      <h1 className="text-4xl font-bold text-center my-6">Trending Apps</h1>
+      <p className="text-sm text-gray-500 text-center my-6">
+        Explore All Trending Apps on the Market developed by us
+      </p>
 
       {error && <p className="text-center text-red-500">Error loading apps</p>}
 

@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=9",
+    "image": "https://i.ibb.co.com/LDqvRgQ1/digital-library.png",
     "title": "Learnify",
     "companyName": "Edutech Labs",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=10",
+    "image": "https://i.ibb.co.com/QvnfpBJf/player.png",
     "title": "DailyTunes",
     "companyName": "MusicFlow",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=11",
+    "image": "https://i.ibb.co.com/kgdgJ12x/devOpps.png",
     "title": "DocuScan",
     "companyName": "TechEase",
     "id": 11,
@@ -198,9 +198,9 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=12",
+    "image": "https://i.ibb.co.com/SD2J2gKw/content.png",
     "title": "GameZone",
-    "companyName": "PlayNow Studios",
+    "companyName": "Play Studios",
     "id": 12,
     "description": "Discover trending mobile games and leaderboards.",
     "size": 120,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=13",
+    "image": "https://i.ibb.co.com/YB7YYSDY/food-app.png",
     "title": "RecipeHub",
     "companyName": "Kitchen Cloud",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=14",
+    "image": "https://i.ibb.co.com/qMKC3Smt/note.png",
     "title": "BookNest",
     "companyName": "PageTurner",
     "id": 14,
@@ -252,8 +252,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=15",
-    "title": "MindPuzzle",
+    "image": "https://i.ibb.co.com/LddW7bcq/stocks.png",
+    "title": "Stock-Net",
     "companyName": "BrainSpark",
     "id": 15,
     "description": "Train your brain with fun logic and memory puzzles.",
@@ -270,8 +270,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=16",
-    "title": "TaskFlow",
+    "image": "https://i.ibb.co.com/s9DF2Tzd/chat.png",
+    "title": "ChatFlow",
     "companyName": "OrganizeIt",
     "id": 16,
     "description": "Smart task manager to boost your productivity.",
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=17",
+    "image": "https://i.ibb.co.com/Txh1nbzk/photos.png",
     "title": "PhotoVault",
     "companyName": "SafePix",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=18",
+    "image": "https://i.ibb.co.com/PZZPvzCQ/news.png",
     "title": "Newsly",
     "companyName": "InfoStream",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=19",
+    "image": "https://i.ibb.co.com/q3mCrzgc/automation.png",
     "title": "CryptoWatch",
     "companyName": "FinTrend",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=20",
+    "image": "https://i.ibb.co.com/ccP3sGMm/shortcut-script-app.png",
     "title": "Tasko",
     "companyName": "Workify",
     "id": 20,
@@ -360,8 +360,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=21",
-    "title": "FlashLearn",
+    "image": "https://i.ibb.co.com/wFMsD2Py/weather-app.png",
+    "title": "FlashWeather",
     "companyName": "EduPulse",
     "id": 21,
     "description": "Learn faster using flashcards and spaced repetition.",
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=22",
+    "image": "https://i.ibb.co.com/Z6gGfVSh/veterinary.png",
     "title": "PetCare",
     "companyName": "Animalia",
     "id": 22,
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=23",
+    "image": "https://i.ibb.co.com/hJjfsZ6W/burger.png",
     "title": "CookBook",
     "companyName": "TastyBits",
     "id": 23,
@@ -414,8 +414,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=24",
-    "title": "MusicMix",
+    "image": "https://i.ibb.co.com/spwm6b66/streaming-tv-app.png",
+    "title": "Streaming-tv",
     "companyName": "Beatify",
     "id": 24,
     "description": "Create and share playlists with your friends easily.",
@@ -432,8 +432,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=25",
-    "title": "Langify",
+    "image": "https://i.ibb.co.com/Rpg9rHSx/dumbbell.png",
+    "title": "Gyemiify",
     "companyName": "WordNest",
     "id": 25,
     "description": "Learn new languages using fun and interactive lessons.",
@@ -450,8 +450,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=26",
-    "title": "EcoTrack",
+    "image": "https://i.ibb.co.com/qYG0CRjK/compass.png",
+    "title": "Digi-Compass",
     "companyName": "GreenSoft",
     "id": 26,
     "description": "Track your carbon footprint and eco-friendly habits.",
@@ -468,9 +468,9 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=27",
-    "title": "VRExplorer",
-    "companyName": "Immersion Labs",
+    "image": "https://i.ibb.co.com/DHKKd8sD/calculator.png",
+    "title": "Calculator App",
+    "companyName": "Immersion Inc",
     "id": 27,
     "description": "Virtual reality tours and immersive experiences.",
     "size": 110,
@@ -486,8 +486,8 @@
     ]
   },
   {
-    "image": "https://picsum.photos/200?random=28",
-    "title": "FitnessPal",
+    "image": "https://i.ibb.co.com/B2XPymt3/line.png",
+    "title": "LinePal",
     "companyName": "WellBeing Inc.",
     "id": 28,
     "description": "All-in-one fitness and nutrition tracker.",

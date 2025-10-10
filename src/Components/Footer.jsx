@@ -44,7 +44,7 @@ const Footer = () => {
       <hr className="my-6 border-gray-600" />
 
       <p className="text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} HERO.IO. All rights reserved.
+        © 2025 HERO.IO. All rights reserved.
       </p>
     </footer>
   );

@@ -16,10 +16,9 @@ const AppCard = ({ app }) => {
         <div className="p-2">
           <div className="flex items-center justify-items-start mt-8">
             <h3 className="text-lg font-semibold">{app.title}</h3>
-            {/* <h3 className="text-lg font-semibold">{app.companyName}</h3> */}
           </div>
 
-          <div className="flex justify-between mt-8">
+          <div className="flex justify-between mt-4">
             <p className="w-18 px-1 py-1 rounded-[4px] bg-[#f1f5e8] text-sm text-green-400 font-semibold flex items-center gap-1">
               <img src={downloadIcon} alt="Downloads" className="w-4 h-4" />
               {formatNumber(app.downloads)}

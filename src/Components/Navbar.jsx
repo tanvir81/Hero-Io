@@ -7,7 +7,7 @@ import githubIcon from "../assets/git_hub.png";
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
-      <div className="navbar-start">
+      <div className="navbar-start lg:mx-10">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -29,30 +29,49 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
-            <NavLink to="/">Home</NavLink>
-
-            <NavLink to="/allapps">Apps</NavLink>
-
-            <NavLink to="/installedApps">Installation</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `px-4 py-2 block transition duration-200 ${
+                  isActive
+                    ? "text-purple-600 font-semibold underline underline-offset-4"
+                    : "text-gray-700 hover:underline hover:underline-offset-4"
+                }`
+              }
+            >
+              Home
+            </NavLink>
 
             <NavLink
-              to="https://github.com/tanvir81"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-white font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] hover:opacity-90 transition"
+              to="/allapps"
+              className={({ isActive }) =>
+                `px-4 py-2 block transition duration-200 ${
+                  isActive
+                    ? "text-purple-600 font-semibold underline underline-offset-4"
+                    : "text-gray-700 hover:underline hover:underline-offset-4"
+                }`
+              }
             >
-              <img
-                src={githubIcon}
-                alt="GitHub"
-                className="w-5 h-5 object-contain "
-              />
-              Contribute
+              Apps
+            </NavLink>
+
+            <NavLink
+              to="/installedApps"
+              className={({ isActive }) =>
+                `px-4 py-2 block transition duration-200 ${
+                  isActive
+                    ? "text-purple-600 font-semibold underline underline-offset-4"
+                    : "text-gray-700 hover:underline hover:underline-offset-4"
+                }`
+              }
+            >
+              Installation
             </NavLink>
           </ul>
         </div>
         <Link to="/" className="flex items-center gap-2">
           <img src={brandLogo} alt="Brand Logo" className="h-10 w-auto" />
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent hidden sm:block">
             HERO.IO
           </h2>
         </Link>
@@ -101,7 +120,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end lg:mx-10 hidden lg:flex">
         <NavLink
           to="https://github.com/tanvir81"
           target="_blank"

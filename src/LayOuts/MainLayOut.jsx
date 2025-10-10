@@ -17,7 +17,7 @@ const MainLayOut = () => {
         </div>
       )}
       <Navbar />
-      <div className="flex-1">
+      <div className="flex-1 bg-[#f5f5f5] ">
         <Outlet />
       </div>
       <Footer />

@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section className="bg-gray-50  ">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center text-center">
-        <div className="max-w-2xl mt-6">
+        <div className="max-w-2xl sm:mx-5 mt-6">
           <h1 className="text-3xl lg:text-5xl font-bold  mb-4">
             We Build <br />{" "}
             <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">

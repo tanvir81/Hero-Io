@@ -16,6 +16,7 @@ import downloadIcon from "../assets/icon-downloads.png";
 import { formatNumber } from "../utility/format";
 import reviewIcon from "../assets/icon-review.png";
 import ratingIcon from "../assets/icon-ratings.png";
+import appNotFoundImage from "../assets/App-Error.png";
 
 const AppDetails = () => {
   const { id } = useParams();
@@ -50,7 +51,23 @@ const AppDetails = () => {
     );
   if (error)
     return <span className="loading loading-spinner text-success"></span>;
-  if (!app) return <p className="text-center text-gray-500">App not found</p>;
+  if (!app)
+    return (
+      <div className="flex flex-col items-center justify-center text-center mt-10 space-y-6">
+        <img
+          src={appNotFoundImage}
+          alt="App Not Found"
+          className="w-64 sm:w-80 md:w-96"
+        />
+        <h2 className="text-2xl sm:text-3xl font-bold text-red-500">
+          OPPS!! APP NOT FOUND
+        </h2>
+        <p className="text-gray-500 max-w-md">
+          The App you are requesting is not found on our system. Please try
+          another app.
+        </p>
+      </div>
+    );
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">

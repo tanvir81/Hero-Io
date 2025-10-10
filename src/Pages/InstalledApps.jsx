@@ -84,7 +84,7 @@ const InstalledApps = () => {
                   className="flex flex-col sm:flex-row sm:items-center sm:justify-between bg-base-100 shadow rounded-xl p-4 gap-4 transition-transform duration-300 hover:-translate-y-1 sm:hover:-translate-y-2"
                 >
                   <img
-                    className="w-full sm:w-24 h-24 object-cover rounded-md"
+                    className="w-full sm:w-24 h-auto object-cover rounded-md"
                     src={app.image}
                     alt={app.name}
                   />

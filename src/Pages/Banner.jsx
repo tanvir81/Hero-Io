@@ -8,7 +8,7 @@ const Banner = () => {
     <section className="bg-gray-50  ">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center justify-center text-center">
         <div className="max-w-2xl sm:mx-5 mt-6">
-          <h1 className="text-3xl lg:text-5xl font-bold  mb-4">
+          <h1 className="text-4xl lg:text-5xl font-bold  mb-4">
             We Build <br />{" "}
             <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">
               Productive
@@ -61,7 +61,7 @@ const Banner = () => {
         </div>
       </div>
       <div className="w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white py-12 px-8 rounded-md">
-        <h1 className="text-2xl lg:text-3xl font-bold text-center mb-6">
+        <h1 className="text-3xl lg:text-5xl font-bold text-center mb-6">
           Trusted by Millions, Built for You
         </h1>
 

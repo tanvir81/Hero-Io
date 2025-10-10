@@ -35,7 +35,7 @@ const AllApps = () => {
       {!loading && filteredApps.length > 0 && (
         <>
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold">Explore All Apps</h1>
+            <h1 className="text-3xl font-bold">Our All Applications</h1>
             <p className="text-gray-600 mt-2">
               Explore All Trending Apps on the Market developed by us
             </p>
@@ -49,7 +49,7 @@ const AllApps = () => {
             </p>
             <input
               type="text"
-              placeholder="Search apps by title..."
+              placeholder="Search Apps..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border px-4 py-2 rounded w-full md:w-64 focus:outline-none focus:ring focus:border-blue-300"

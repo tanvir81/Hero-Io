@@ -25,7 +25,7 @@ const AppDetails = () => {
 
   const app = apps.find((app) => app.id === parseInt(id));
   console.log("installing app", app);
-
+  // useeffect
   useEffect(() => {
     if (app) {
       const isAlreadyInstalled = loadInstalledApps().some(
